@@ -10,7 +10,7 @@ Data from a csv is read into a DataFrame, normalised using StandardScaler which 
 
 For this dataset, it seems the optimal k-value using the original data and PCA data are both the same value, 4. This suggests that the segmentation of crypto coins may yield similar results between the dataset with all features compared to the PCA analysis.
 
-<img src="Images/composite_plot_elbow.png" alt="Composite plot elbow data to determine number of clusters" width="400"><br><br>
+<img src="Images/composite_plot_elbow.png" alt="Composite plot elbow data to determine number of clusters" width="600"><br><br>
 
 After reducing the number of dimensions using PCA, approximately 89.5% of the total variance is explained by the 3 PCA variables.
 
@@ -18,9 +18,11 @@ Analysis of both datasets using K-means and plotting as a scatter plot shows tha
 
 After visually analysing the cluster analysis results, it can be seen that by condensing the number of features or components, the segmentation is a lot tighter/less scattered; the segments are less overlapping compared to undertaking K-means with more features.
 
-Using the full features dataset, segments 1 & 3 should be focussed on, while with the PCA dataset, segments 0 & 1 should be focussed on for further targetting or analysis.
+Using the full features dataset, segments 1 & 3 seem to be the main clusters. Cluster 1 are coins that are slightly negatively affected by 24-hour or 7-day price change, whereas segment 3 cluster of coins are those that are slightly positively affected  by 24-hour or 7-day price changes.
 
-<img src="Images/composite_plot_clusters.png" alt="Composite plot clusters of crypto coin segments" width="400"><br><br>
+The PCA dataset also suggests that there are 2 main clusters, segments 0 & 1. While both segments are predominantly slightly negatively affected by PC1, segment 0 is also slightly negatively affected by PC2 whereas segment 1 is slightly positively affected by PC2.
+
+<img src="Images/composite_plot_clusters.png" alt="Composite plot clusters of crypto coin segments" width="600"><br><br>
 
 ## Environment
 
